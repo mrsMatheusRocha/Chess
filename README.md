@@ -1,6 +1,6 @@
 # ♟️ Chess
 
-> **Where Strategy Meets Code** — A Beautiful Interactive Chess Game Built with Web Technologies
+> **Where Strategy Meets Code**
 
 ![Chess Badge](https://img.shields.io/badge/Game-Chess-blue?style=flat-square)
 ![HTML](https://img.shields.io/badge/HTML-65.1%25-orange?style=flat-square)
