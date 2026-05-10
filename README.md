@@ -19,12 +19,10 @@ Whether you're a chess grandmaster looking to sharpen your skills or a casual pl
 
 ## ✨ Features
 
-- 🎮 **Interactive Gameplay** — Move pieces intuitively with a clean, responsive interface
 - 🎨 **Beautiful Design** — Minimalist aesthetic with smooth styling and visual feedback
 - ♟️ **Full Chess Rules** — Classic 8×8 board with all standard chess mechanics
 - 📱 **Responsive Layout** — Works seamlessly on desktop, tablet, and mobile devices
 - ⚡ **Fast & Lightweight** — Pure HTML and CSS means instant loading and smooth performance
-- 🖱️ **User-Friendly Controls** — Simple click-and-drop interface for piece movement
 
 ---
 
@@ -33,14 +31,7 @@ Whether you're a chess grandmaster looking to sharpen your skills or a casual pl
 ### Prerequisites
 - Any modern web browser (Chrome, Firefox, Safari, Edge)
 - No installation or dependencies required
-
-### How to Play
-
-1. **Clone or download** this repository
-2. **Open `index.html`** in your web browser
-3. **Start playing!** White moves first
-4. **Click a piece** to select it, then click a destination square to move
-
+- 
 ---
 
 ## 📋 Game Rules
@@ -95,20 +86,6 @@ Contributions are welcome! Whether it's bug fixes, new features, or improvements
 4. **Push to the branch** (`git push origin feature/amazing-feature`)
 5. **Open a Pull Request**
 
-### Ideas for Enhancement
-- ♻️ Undo/Redo moves functionality
-- 📊 Move history & game replays
-- 🤖 AI opponent integration
-- 🏆 Win/loss tracking
-- ⏱️ Timer modes (Blitz, Rapid, Classical)
-- 🎭 Different board themes and piece styles
-
----
-
-## 📄 License
-
-This project is open source and available under the **MIT License** — feel free to use it for personal, educational, or commercial purposes.
-
 ---
 
 ## 👨‍💻 About the Developer
@@ -117,18 +94,6 @@ This project is open source and available under the **MIT License** — feel fre
 
 - 🔗 GitHub: [@mrsMatheusRocha](https://github.com/mrsMatheusRocha)
 - 💼 Open to collaboration and feedback
-
----
-
-## 🎯 Roadmap
-
-- [ ] Multiplayer support over network
-- [ ] Save and load game states
-- [ ] Chess notation recording
-- [ ] Difficulty levels for AI
-- [ ] Theme customization
-- [ ] Mobile-optimized touch controls
-- [ ] Sound effects and animations
 
 ---
 
