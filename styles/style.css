@@ -1,0 +1,300 @@
+@font-face {
+  font-family: "Overlock";
+  src: local("Overlock"), url(../fonts/Overlock-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Overlock";
+  src: local("Overlock Bold"), url(../fonts/Overlock-Bold.ttf);
+  font-weight: bold;
+}
+
+:root {
+  --color-sale-400: hsl(3 81% 29%);
+  --color-accent-300: hsl(39, 94%, 57%);
+  --color-accent-400: hsl(39, 100%, 41%);
+  --color-neutral-100: hsl(0, 0%, 100%);
+  --color-neutral-800: hsl(0, 0%, 20%);
+  --color-neutral-900: hsl(0, 0%, 10%);
+
+  --font-base: system-ui, sans-serif;
+  --font-accent: Overlock, serif;
+
+  --font-size-400: 1.125rem;
+  --font-size-500: 1.3125rem;
+  --font-size-600: 1.5rem;
+  --font-size-700: 2.25rem;
+  --font-size-800: 3rem;
+
+  @media (width > 960px) {
+    --font-size-600: 2rem;
+    --font-size-700: 3rem;
+    --font-size-800: 4rem;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--color-neutral-800);
+  font-size: var(--font-size-400);
+  font-family: var(--font-base);
+
+  line-height: 1.4;
+
+  margin: 0;
+}
+
+h1,
+h2 {
+  color: var(--color-accent-400);
+  font-family: var(--font-accent);
+  font-weight: 700;
+}
+
+h1 {
+  font-size: var(--font-size-800);
+}
+
+h1 span {
+  display: block;
+  color: var(--color-neutral-800);
+  font-size: 0.75em;
+}
+
+h2 {
+  font-size: var(--font-size-700);
+}
+
+h3 {
+  font-size: var(--font-size-600);
+}
+
+a {
+  color: var(--color-accent-400);
+
+  &:hover {
+    color: inherit;
+  }
+  &:focus-visible {
+    color: inherit;
+  }
+}
+
+img {
+  display: block;
+  max-inline-size: 100%;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0%;
+    translate: 0 100px;
+  }
+  
+  100% {
+    opacity: 1;
+  }
+}
+
+.hero {
+  animation: fade-in 2s;
+}
+
+.hero-layout {
+  opacity: 0;
+  animation: fade-in 2s forwards;
+  animation-delay: 1s;
+}
+
+button {
+  font: inherit;
+}
+
+.button {
+  color: var(--color-neutral-800);
+  background-color: var(--color-accent-300);
+  border: none;
+  padding: 0.5em 1.5em;
+  cursor: pointer;
+  text-decoration: none;
+
+  &:hover,
+  :focus-visible {
+    background-color: var(--color-neutral-800);
+    color: var(--color-neutral-100);
+  }
+}
+
+.lead {
+  font-size: var(--font-size-500);
+}
+
+.page-header {
+  background: var(--color-neutral-900);
+  padding-block: 21px;
+}
+
+.page-header-layout {
+  display: flex;
+  gap: 21px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.primary-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 21px;
+
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.primary-nav a {
+  font-weight: bold;
+  color: var(--color-neutral-100);
+  text-decoration: none;
+
+  &:hover {
+    color: var(--color-accent-300);
+  }
+  &:focus-visible {
+    color: var(--color-accent-300);
+  }
+}
+
+.hero {
+  background-color: var(--color-accent-400);
+  background-image: url(../images/chess-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-block: 100px;
+  padding-inline: 1rem;
+  text-align: center;
+}
+
+.hero-layout {
+  background-color: hsl(0 0% 100% / 0.7);
+  padding: 50px;
+}
+
+.hero-layout > :first-child {
+  margin-block-start: 0;
+}
+
+.hero-layout > :last-child {
+  margin-block-end: 0;
+}
+
+.course {
+  --transition-duration: 325ms;
+
+  display: grid;
+  gap: 1rem;
+  align-content: end;
+  color: var(--color-neutral-100);
+  padding: 1.5rem;
+  padding-block-start: 120px;
+  position: relative;
+
+  overflow: clip;
+
+  > img {
+    z-index: -1;
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: scale var(--transition-duration);
+  }
+}
+
+.course img {
+  transition: scale 1s;
+}
+
+.course:hover img {
+  scale: 1.1;
+}
+
+.course > * {
+  margin: 0;
+}
+
+.course:hover {
+  .course-image {
+    scale: 1.1;
+  }
+}
+
+.course[data-sale="true"] .course-title::after {
+  content: "sale";
+  background: var(--color-sale-400);
+  font-family: var(--font-accent);
+  position: absolute;
+  left: 0;
+  top: 65px;
+  padding: 5px 10px;
+}
+
+.course[data-featured="true"] .course-title::after {
+  content: "⭐" / "featured course";
+  position: absolute;
+  top: 0;
+  right: 20px;
+  background: var(--color-neutral-900);
+  padding: 5px;
+
+}
+
+.course-tag {
+  font-family: var(--font-accent);
+  font-weight: 700;
+  color: var(--color-neutral-900);
+  background-color: var(--color-accent-300);
+  padding: 0.25em 0.5em;
+
+  position: absolute;
+  top: 16px;
+  left: 0;
+}
+
+.wrapper {
+  padding-inline: 1rem;
+  max-inline-size: 900px;
+  margin-inline: auto;
+}
+
+.page-footer {
+  background-color: var(--color-neutral-800);
+  background-image: linear-gradient(var(--color-neutral-800), black);
+  padding: 100px;
+  color: var(--color-neutral-100);
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.footer-layout {
+  margin-inline: auto;
+  max-inline-size: 900px;
+}
+
+.three-columns {
+  display: grid;
+  gap: 21px;
+  @media (width > 720px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.elena-img {
+  display: flex;
+  justify-content: center;
+  margin-block: 2rem;
+  height: 500px;
+}
