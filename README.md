@@ -11,9 +11,9 @@
 
 ## 🎯 Overview
 
-Welcome to **Chess** — an elegant, web-based chess game that brings the ancient game of kings to your browser. Built with pure HTML and CSS, this project demonstrates how timeless game mechanics can be recreated using modern web technologies.
+Welcome to **Chess** — your ultimate platform for learning chess and connecting with experienced instructors. This comprehensive learning resource combines interactive tutorials, skill assessments, and a curated instructor directory to help you master the ancient game of kings.
 
-Whether you're a chess grandmaster looking to sharpen your skills or a casual player seeking entertainment, this interactive chess experience offers a clean, intuitive interface for enjoying the world's most strategic game.
+Whether you're a complete beginner taking your first steps into the world of chess or an intermediate player looking to refine your strategy, this platform offers a structured learning path and the ability to find the perfect instructor to guide your journey. Connect with qualified chess coaches, track your progress, and accelerate your improvement through personalized guidance.
 
 ---
 
