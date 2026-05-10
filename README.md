@@ -57,3 +57,87 @@ This chess implementation follows the standard FIDE (Fédération Internationale
 ---
 
 ## 📁 Project Structure
+
+Chess/ ├── README.md # This file ├── index.html # Main game interface & structure └── style.css # Game styling & visual presentation
+
+
+---
+
+## 🛠️ Technologies Used
+
+| Technology | Usage | Percentage |
+|-----------|-------|-----------|
+| **HTML5** | Game structure and board layout | 65.1% |
+| **CSS3** | Visual styling and responsive design | 34.9% |
+
+This lean tech stack proves that complex games don't need heavy frameworks — pure web standards are powerful enough!
+
+---
+
+## 🎓 Learning & Development
+
+This project is perfect for:
+
+- 📚 **Learning web fundamentals** — See how HTML and CSS work together
+- 🧩 **Understanding game logic** — Explore chess mechanics implementation
+- 🎨 **CSS mastery** — Study clean, maintainable styling practices
+- 🔧 **Project inspiration** — Build your own interactive browser games
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Whether it's bug fixes, new features, or improvements, feel free to:
+
+1. **Fork** the repository
+2. **Create a feature branch** (`git checkout -b feature/amazing-feature`)
+3. **Commit your changes** (`git commit -m 'Add amazing feature'`)
+4. **Push to the branch** (`git push origin feature/amazing-feature`)
+5. **Open a Pull Request**
+
+### Ideas for Enhancement
+- ♻️ Undo/Redo moves functionality
+- 📊 Move history & game replays
+- 🤖 AI opponent integration
+- 🏆 Win/loss tracking
+- ⏱️ Timer modes (Blitz, Rapid, Classical)
+- 🎭 Different board themes and piece styles
+
+---
+
+## 📄 License
+
+This project is open source and available under the **MIT License** — feel free to use it for personal, educational, or commercial purposes.
+
+---
+
+## 👨‍💻 About the Developer
+
+**mrsMatheusRocha** — Building interactive experiences on the web, one piece at a time ♟️
+
+- 🔗 GitHub: [@mrsMatheusRocha](https://github.com/mrsMatheusRocha)
+- 💼 Open to collaboration and feedback
+
+---
+
+## 🎯 Roadmap
+
+- [ ] Multiplayer support over network
+- [ ] Save and load game states
+- [ ] Chess notation recording
+- [ ] Difficulty levels for AI
+- [ ] Theme customization
+- [ ] Mobile-optimized touch controls
+- [ ] Sound effects and animations
+
+---
+
+## 🐛 Issues & Support
+
+Found a bug? Have a suggestion? [Open an issue](https://github.com/mrsMatheusRocha/Chess/issues) and let's make this project better together!
+
+---
+
+**Happy Playing! ♚ ♞ ♝ ♜ ♛ ♟**
+
+---
